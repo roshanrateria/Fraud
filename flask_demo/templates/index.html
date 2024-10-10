@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fraud Detection</h1>
+        <form method="POST">
+            <label>Transaction Amount</label>
+            <input type="number" name="amount" step="0.01" required>
+
+            <label>Card Type</label>
+            <select name="card_type" required>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+
+            <label>Location</label>
+            <select name="location" required>
+                <option value="Surat">Surat</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Pune">Pune</option>
+            </select>
+
+            <label>Purchase Category</label>
+            <select name="purchase_category" required>
+                <option value="POS">POS</option>
+                <option value="Digital">Digital</option>
+            </select>
+
+            <label>Customer Age</label>
+            <input type="number" name="customer_age" required>
+
+            <label>Time of Day</label>
+            <select name="time_of_day" required>
+                <option value="night">Night</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="footer">
+            <p>By detecting fraudulent transactions, this tool helps protect users and businesses in the Indian digital landscape.</p>
+        </div>
+    </div>
+</body>
+</html>
