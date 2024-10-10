@@ -30,7 +30,9 @@ Fraud detection is crucial in today's digital age as it helps protect businesses
   `python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 - Install the required packages
-  `pip install -r requirements.txt`
+  `pip install Flask numpy pandas matplotlib scikit-learn`
+- `cd flask_demo`
+- `flask run`
   
 
 ## Trial Link : https://huggingface.co/spaces/RoAr777/Fraud?logs=container
